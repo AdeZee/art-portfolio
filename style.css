@@ -152,3 +152,27 @@ footer {
   padding: 2rem;
   margin-top: 60px; /* same height as topbar */
 }
+
+.right-group {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-icons {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.header-icons .icon {
+  color: #222;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-icons .icon:hover {
+  color: #f39c12; /* change to your accent color */
+}
