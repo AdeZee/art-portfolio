@@ -103,10 +103,10 @@ header.topbar {
 
 .page-title a.home-link {
   text-decoration: none;
-  color: inherit; /* keeps same color as title */
-  display: inline-block; /* makes the whole text clickable */
+  color: inherit;
+  display: inline-block;
 }
 
 .page-title a.home-link:hover {
-  color: #f39c12; /* optional hover color */
+  color: #f39c12;
 }
