@@ -176,3 +176,21 @@ footer {
 .header-icons .icon:hover {
   color: #f39c12; /* change to your accent color */
 }
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1rem 2rem;
+  height: 80px;
+}
+
+.page-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  margin: 0;
+}
