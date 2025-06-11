@@ -34,39 +34,27 @@ header.topbar {
 }
 
 .menu-left,
-.menu-right,
-.header-icons {
+.menu-right {
   display: flex;
-  gap: 1.5rem;
   align-items: center;
+  gap: 2rem;
 }
 
 nav ul {
   display: flex;
-  list-style: none;
   gap: 1.5rem;
+  list-style: none;
 }
 
-nav a {
-  text-decoration: none;
-  color: #222;
-  font-weight: 500;
-  font-size: 1rem;
-}
-
-.page-title {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: 'Playfair Display', serif;
-  font-size: 1.75rem;
-  color: #222;
-  white-space: nowrap;
+.header-icons {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
 }
 
 .header-icons .icon {
-  color: #222;
   font-size: 1.25rem;
+  color: #222;
   text-decoration: none;
   transition: color 0.3s ease;
 }
