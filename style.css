@@ -107,6 +107,7 @@ header.topbar {
   display: inline-block;
 }
 
+/* Remove this block if you don't want any hover color */
 .page-title a.home-link:hover {
-  color: #f39c12;
+  /* no color change */
 }
