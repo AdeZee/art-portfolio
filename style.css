@@ -19,21 +19,22 @@ header.topbar {
 }
 
 .topbar-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
   width: 100%;
 }
 
-/* LEFT MENU */
+/* LEFT menu */
 .menu-left ul {
+  list-style: none;
   display: flex;
   gap: 1.5rem;
-  list-style: none;
 }
 
 .menu-left a {
@@ -43,7 +44,11 @@ header.topbar {
   font-size: 1rem;
 }
 
-/* CENTER TITLE */
+.menu-left a:hover {
+  color: #f39c12;
+}
+
+/* CENTER title */
 .page-title {
   position: absolute;
   left: 50%;
@@ -54,19 +59,31 @@ header.topbar {
   white-space: nowrap;
 }
 
-/* RIGHT: MENU + ICONS as one group */
-.menu-right-group {
+/* RIGHT container: menu + icons */
+.right-menu-icons {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
 .menu-right {
+  list-style: none;
   display: flex;
   gap: 1.5rem;
-  list-style: none;
 }
 
+.menu-right a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.menu-right a:hover {
+  color: #f39c12;
+}
+
+/* Icons */
 .header-icons {
   display: flex;
   gap: 1.2rem;
