@@ -8,14 +8,9 @@ body {
   font-family: 'Inter', sans-serif;
   background: #fefefe;
   color: #333;
-  line-height: 1.6;
 }
 
 header.topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
   background: #fafafa;
   border-bottom: 1px solid #ddd;
   position: sticky;
@@ -25,27 +20,61 @@ header.topbar {
 
 .topbar-inner {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 1rem 2rem;
   position: relative;
+  width: 100%;
 }
 
-.menu-left,
-.menu-right {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-nav ul {
+/* LEFT MENU */
+.menu-left ul {
   display: flex;
   gap: 1.5rem;
   list-style: none;
 }
 
+.menu-left a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* CENTER TITLE */
+.page-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  color: #222;
+  white-space: nowrap;
+}
+
+/* RIGHT: MENU + ICONS as one group */
+.menu-right-group {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu-right {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.menu-right a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Icons */
 .header-icons {
   display: flex;
   gap: 1.2rem;
@@ -59,7 +88,8 @@ nav ul {
   transition: color 0.3s ease;
 }
 
-nav a:hover,
-.header-icons .icon:hover {
+.header-icons .icon:hover,
+.menu-left a:hover,
+.menu-right a:hover {
   color: #f39c12;
 }
