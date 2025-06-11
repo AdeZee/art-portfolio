@@ -22,7 +22,6 @@ header.topbar {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem 2rem;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,20 +30,23 @@ header.topbar {
 }
 
 /* LEFT menu */
-.menu-left ul {
+.menu-left ul,
+.menu-right {
   list-style: none;
   display: flex;
   gap: 1.5rem;
 }
 
-.menu-left a {
+.menu-left a,
+.menu-right a {
   text-decoration: none;
   color: #222;
   font-weight: 500;
   font-size: 1rem;
 }
 
-.menu-left a:hover {
+.menu-left a:hover,
+.menu-right a:hover {
   color: #f39c12;
 }
 
@@ -59,31 +61,22 @@ header.topbar {
   white-space: nowrap;
 }
 
-/* RIGHT container: menu + icons */
+.page-title a.home-link {
+  all: unset;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  color: #222;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* RIGHT menu + icons */
 .right-menu-icons {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-.menu-right {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.menu-right a {
-  text-decoration: none;
-  color: #222;
-  font-weight: 500;
-  font-size: 1rem;
-}
-
-.menu-right a:hover {
-  color: #f39c12;
-}
-
-/* Icons */
 .header-icons {
   display: flex;
   gap: 1.2rem;
@@ -99,28 +92,4 @@ header.topbar {
 
 .header-icons .icon:hover {
   color: #f39c12;
-}
-
-.page-title a.home-link {
-  text-decoration: none !important;
-  color: #222 !important;
-  display: inline-block;
-}
-
-.page-title a.home-link:hover {
-  color: #222 !important; /* stays black on hover */
-}
-
-/* Fix House of Mab title link hover color */
-.page-title a.home-link {
-  all: unset; /* removes all inherited link styles */
-  font-family: 'Playfair Display', serif;
-  font-size: 1.75rem;
-  color: #222;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.page-title a.home-link:hover {
-  color: #222; /* stays black */
 }
