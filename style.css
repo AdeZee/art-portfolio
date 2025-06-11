@@ -110,3 +110,17 @@ header.topbar {
 .page-title a.home-link:hover {
   color: #222 !important; /* stays black on hover */
 }
+
+/* Fix House of Mab title link hover color */
+.page-title a.home-link {
+  all: unset; /* removes all inherited link styles */
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  color: #222;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.page-title a.home-link:hover {
+  color: #222; /* stays black */
+}
