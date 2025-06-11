@@ -67,14 +67,6 @@ header.topbar {
   list-style: none;
 }
 
-.menu-right a {
-  text-decoration: none;
-  color: #222;
-  font-weight: 500;
-  font-size: 1rem;
-}
-
-/* Icons */
 .header-icons {
   display: flex;
   gap: 1.2rem;
@@ -88,8 +80,6 @@ header.topbar {
   transition: color 0.3s ease;
 }
 
-.header-icons .icon:hover,
-.menu-left a:hover,
-.menu-right a:hover {
+.header-icons .icon:hover {
   color: #f39c12;
 }
