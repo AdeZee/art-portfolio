@@ -100,3 +100,54 @@ footer {
   background: #f3f3f3;
   font-size: 0.9rem;
 }
+/* Top bar container */
+.topbar {
+  display: flex;
+  align-items: center;            /* vertically center items */
+  justify-content: space-between; /* space between left, center, right */
+  padding: 1rem 2rem;
+  background-color: #fafafa;
+  border-bottom: 1px solid #ddd;
+  position: sticky; /* stays at top on scroll */
+  top: 0;
+  z-index: 1000;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Left and right menus */
+.menu-left ul,
+.menu-right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem; /* spacing between menu items */
+}
+
+.menu-left a,
+.menu-right a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.menu-left a:hover,
+.menu-right a:hover {
+  color: #f39c12; /* accent color on hover */
+}
+
+/* Center title */
+.page-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  margin: 0;
+  color: #222;
+  white-space: nowrap; /* prevent line breaks */
+}
+
+/* Main content padding to avoid being under the topbar */
+.main-content {
+  padding: 2rem;
+  margin-top: 60px; /* same height as topbar */
+}
