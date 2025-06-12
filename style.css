@@ -1,15 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Inter', sans-serif;
   background: #fefefe;
   color: #333;
+  margin: 0;
+  padding: 0;
 }
 
+/* Header */
 header.topbar {
   background: #fafafa;
   border-bottom: 1px solid #ddd;
@@ -29,12 +26,14 @@ header.topbar {
   width: 100%;
 }
 
-/* LEFT menu */
+/* Navigation Menus */
 .menu-left ul,
 .menu-right {
-  list-style: none;
   display: flex;
   gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-left a,
@@ -50,7 +49,7 @@ header.topbar {
   color: #f39c12;
 }
 
-/* CENTER title */
+/* Page Title */
 .page-title {
   position: absolute;
   left: 50%;
@@ -59,18 +58,18 @@ header.topbar {
   font-size: 1.75rem;
   color: #222;
   white-space: nowrap;
+  margin: 0;
 }
 
 .page-title a.home-link {
   all: unset;
+  cursor: pointer;
   font-family: 'Playfair Display', serif;
   font-size: 1.75rem;
   color: #222;
-  cursor: pointer;
-  display: inline-block;
 }
 
-/* RIGHT menu + icons */
+/* Right Icons */
 .right-menu-icons {
   display: flex;
   align-items: center;
@@ -94,75 +93,28 @@ header.topbar {
   color: #f39c12;
 }
 
+/* Hero Slideshow */
 .hero-container {
+  max-width: 800px;
   width: 100%;
-  height: 500px;
+  margin: 20px auto;
   overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
 .hero-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: opacity 1s ease-in-out;
+  height: auto;
+  display: block;
+  transition: opacity 0.5s ease-in-out;
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 1;
 }
 
-.hero-container {
-  width: 100%;           /* full width of container */
-  max-width: 800px;      /* max width to keep images manageable */
-  margin: 0 auto;        /* center horizontally */
-  overflow: hidden;      /* hide anything outside */
-  border-radius: 12px;   /* optional: rounded corners */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* subtle shadow */
-}
-
-.hero-image {
-  width: 100%;           /* make image fill the container width */
-  height: auto;          /* keep aspect ratio */
-  display: block;        /* remove inline spacing */
-  transition: opacity 0.5s ease-in-out;  /* smooth fade effect */
-}
-
-.topbar-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 10px 20px;
-}
-
-.menu-left ul {
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.menu-left ul li a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
-}
-
-.page-title {
-  flex-grow: 1;
-  text-align: center;
-  margin: 0;
-}
-
-.right-menu-icons {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
+/* Gallery */
 .image-gallery {
   max-width: 1000px;
   margin: 40px auto;
@@ -171,9 +123,9 @@ header.topbar {
 
 .gallery-row {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .gallery-row img {
@@ -182,7 +134,13 @@ header.topbar {
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  flex: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex: 1 1 30%;
 }
 
+
+  
+  
+ 
+  
+ 
