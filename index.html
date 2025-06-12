@@ -6,57 +6,143 @@
   <title>House of Mab — Art & Design</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@300;500&display=swap" rel="stylesheet">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
   <style>
-  .hero-container {
-    width: 100%;
-    max-width: 800px;
-    margin: 20px auto;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fefefe;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
-  .hero-image {
-    width: 100% !important;
-    height: auto !important;
-    display: block;
-    transition: opacity 0.5s ease-in-out;
-  }
+    /* Header Styles */
+    header.topbar {
+      background: #fafafa;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-  /* --- NEW: GALLERY STYLES BELOW --- */
-  .image-gallery {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 0 20px;
-  }
+    .topbar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
 
-  .gallery-row {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+    .menu-left ul,
+    .menu-right {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
 
-  .gallery-row img {
-    width: 100%;
-    max-width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    flex: 1 1 30%;
-  }
-</style>
+    .menu-left a,
+    .menu-right a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    .menu-left a:hover,
+    .menu-right a:hover {
+      color: #f39c12;
+    }
+
+    .page-title {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.75rem;
+      color: #222;
+      white-space: nowrap;
+    }
+
+    .home-link {
+      all: unset;
+      cursor: pointer;
+    }
+
+    .right-menu-icons {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .header-icons {
+      display: flex;
+      gap: 1.2rem;
+      align-items: center;
+    }
+
+    .header-icons .icon {
+      font-size: 1.25rem;
+      color: #222;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .header-icons .icon:hover {
+      color: #f39c12;
+    }
+
+    /* Hero Slideshow */
+    .hero-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .hero-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    /* Image Gallery */
+    .image-gallery {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .gallery-row {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .gallery-row img {
+      width: 100%;
+      max-width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      flex: 1 1 30%;
+    }
+  </style>
 </head>
+
 <body>
   <header class="topbar">
     <div class="topbar-inner">
-
-      <!-- LEFT container: New, Preloved, Projects -->
+      <!-- LEFT MENU -->
       <nav class="menu-left">
         <ul>
           <li><a href="#new">New</a></li>
@@ -65,12 +151,12 @@
         </ul>
       </nav>
 
-      <!-- CENTER title -->
+      <!-- CENTER TITLE -->
       <h1 class="page-title">
         <a href="/" class="home-link">House of Mab</a>
       </h1>
 
-      <!-- RIGHT container: Sustainability, Return + icons -->
+      <!-- RIGHT MENU + ICONS -->
       <div class="right-menu-icons">
         <ul class="menu-right">
           <li><a href="#sustainability">Sustainability</a></li>
@@ -82,41 +168,40 @@
           <a href="#account" class="icon"><i class="fas fa-user"></i></a>
         </div>
       </div>
-
     </div>
   </header>
 
+  <!-- HERO SLIDESHOW -->
   <div class="hero-container">
     <img src="images/image1.jpg" alt="Slideshow Image" class="hero-image" />
   </div>
 
-  <!-- GALLERY under hero -->
-<section class="image-gallery">
-  <div class="gallery-row">
-    <img src="images/image1.jpg" alt="Image 1" />
-    <img src="images/image2.jpg" alt="Image 2" />
-    <img src="images/image1.jpg" alt="Image 3" />
-  </div>
-</section>
+  <!-- GALLERY -->
+  <section class="image-gallery">
+    <div class="gallery-row">
+      <img src="images/image1.jpg" alt="Image 1" />
+      <img src="images/image2.jpg" alt="Image 2" />
+      <img src="images/image1.jpg" alt="Image 3" />
+    </div>
+  </section>
 
   <main class="main-content">
-    <!-- your page content here -->
+    <!-- Add your page content here -->
   </main>
 
   <script>
-  const images = ['images/image1.jpg', 'images/image2.jpg']; // Corrected paths
-  const heroImage = document.querySelector('.hero-image');
-  let current = 0;
+    const images = ['images/image1.jpg', 'images/image2.jpg'];
+    const heroImage = document.querySelector('.hero-image');
+    let current = 0;
 
-  setInterval(() => {
-    current = (current + 1) % images.length;
-    heroImage.style.opacity = 0;
-    setTimeout(() => {
-      heroImage.src = images[current];
-      heroImage.style.opacity = 1;
-    }, 500);
-  }, 5000);
-</script>
+    setInterval(() => {
+      current = (current + 1) % images.length;
+      heroImage.style.opacity = 0;
+      setTimeout(() => {
+        heroImage.src = images[current];
+        heroImage.style.opacity = 1;
+      }, 500);
+    }, 5000);
+  </script>
 </body>
 </html>
- 
