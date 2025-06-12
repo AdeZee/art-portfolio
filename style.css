@@ -95,13 +95,13 @@ header.topbar {
 
 /* Hero Slideshow */
 .hero-container {
-  max-width: 800px;
-  width: 100%;
+  width: 100%;          /* full width */
+  max-width: none;      /* remove the limit */
+  height: 600px;        /* increase the height */
   margin: 20px auto;
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .hero-image {
