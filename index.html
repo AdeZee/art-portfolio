@@ -14,17 +14,41 @@
   .hero-container {
     width: 100%;
     max-width: 800px;
-    margin: 20px auto; /* centers the container */
+    margin: 20px auto;
     overflow: hidden;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
 
   .hero-image {
-    width: 100% !important;  /* force override */
+    width: 100% !important;
     height: auto !important;
     display: block;
     transition: opacity 0.5s ease-in-out;
+  }
+
+  /* --- NEW: GALLERY STYLES BELOW --- */
+  .image-gallery {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  .gallery-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .gallery-row img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    flex: 1 1 30%;
   }
 </style>
 </head>
