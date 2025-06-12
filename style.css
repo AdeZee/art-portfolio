@@ -138,6 +138,146 @@ header.topbar {
   flex: 1 1 30%;
 }
 
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fefefe;
+  color: #333;
+}
+
+/* Top bar */
+header.topbar {
+  background: #fafafa;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.topbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Left and Right Menus */
+.menu-left ul,
+.menu-right {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu-left a,
+.menu-right a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.menu-left a:hover,
+.menu-right a:hover {
+  color: #f39c12;
+}
+
+/* Center title */
+.page-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  color: #222;
+  white-space: nowrap;
+}
+
+.page-title a.home-link {
+  all: unset;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  color: #222;
+}
+
+/* Right icons */
+.right-menu-icons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-icons {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.header-icons .icon {
+  font-size: 1.25rem;
+  color: #222;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-icons .icon:hover {
+  color: #f39c12;
+}
+
+/* Hero slideshow */
+.hero-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+/* Image gallery */
+.image-gallery {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.gallery-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-row img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex: 1 1 30%;
+}
 
   
   
