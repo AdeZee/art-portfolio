@@ -111,3 +111,19 @@ header.topbar {
   left: 0;
   opacity: 1;
 }
+
+.hero-container {
+  width: 100%;           /* full width of container */
+  max-width: 800px;      /* max width to keep images manageable */
+  margin: 0 auto;        /* center horizontally */
+  overflow: hidden;      /* hide anything outside */
+  border-radius: 12px;   /* optional: rounded corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+.hero-image {
+  width: 100%;           /* make image fill the container width */
+  height: auto;          /* keep aspect ratio */
+  display: block;        /* remove inline spacing */
+  transition: opacity 0.5s ease-in-out;  /* smooth fade effect */
+}
